@@ -1,0 +1,17 @@
+{
+  "name": "safe-fetch",
+  "description": "",
+  "version": "0.1.0",
+  "main": "./build/index.js",
+  "scripts": {
+    "start": "npx ts-node ./src/example.ts",
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.4",
+    "typescript": "^3.6.2"
+  }
+}
