@@ -77,7 +77,7 @@ function getReqHeaders(opts: Options, contentTypeHeader: string | undefined) {
 	return headers;
 }
 
-async function safeFetch<ResponseBody extends any>(opts: Options): Promise<SafeResponse<ResponseBody>> {
+async function safeHttp<ResponseBody extends any>(opts: Options): Promise<SafeResponse<ResponseBody>> {
 	const { url, method } = opts;
 	
 	const {
@@ -120,4 +120,4 @@ async function safeFetch<ResponseBody extends any>(opts: Options): Promise<SafeR
 	return res;
 }
 
-export default safeFetch;
+export default safeHttp;

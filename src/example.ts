@@ -1,4 +1,4 @@
-import safeFetch from "./";
+import safeHttp from "./";
 
 async function main() {
 	const req1 = {
@@ -6,7 +6,7 @@ async function main() {
 		method: "get",
 	};
 	
-	const res1 = await safeFetch(req1);
+	const res1 = await safeHttp(req1);
 	
 	console.log({
 		req1,
@@ -18,7 +18,7 @@ async function main() {
 		method: "get",
 	};
 
-	const res2 = await safeFetch(req2);
+	const res2 = await safeHttp(req2);
 
 	console.log({
 		req2,
